@@ -9,9 +9,9 @@ $('.chat-button').on('click', function () {
 $('.chat-box .chat-box-header p').on('click', function () {
     $('.chat-button').css({ "display": "block" });
     $('.chat-box').css({ "visibility": "hidden" });
-     console.log("expanded UI");//remove
+     console.log("Closed UI");//remove
         // Replace 'parent' with the actual reference to the parent window
-        window.parent.postMessage({ type: 'chatbotExpand' }, '*');
+        window.parent.postMessage({ type: 'chatbotclosed' }, '*');
     //console.log("expanded UI");//remove
     // Replace 'parent' with the actual reference to the parent window
     //window.parent.postMessage({ type: 'chatbotExpand' }, '*');
